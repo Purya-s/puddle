@@ -9,10 +9,12 @@ from .forms import SignUpForm
 def index(request):
     items = Item.objects.filter(is_sold=False)[0:6]
     categories = Category.objects.all()
+    username = request.user.username
     return render(request,  'core/index.html',
                   {
                       'categories':categories,
                       'items':items,
+                      'username': username,
                   }
                 )
 

@@ -1,12 +1,12 @@
 from django import forms
-from .models import Conversationmessage
+from .models import ConversationMessage
 
 class ConversationMessageForm(forms.ModelForm):
     class Meta:
-        model = Conversationmessage
+        model = ConversationMessage
         fields = ('content',)
-        widjets = {
+        widgets = {
                 'content': forms.Textarea(attrs={
-                'class': 'w-full py-4 px-6 rounded-xl border',
+                'class': 'w-2/3 py-4 px-6 rounded-xl border'
             })
         }

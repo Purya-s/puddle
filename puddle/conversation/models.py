@@ -15,7 +15,7 @@ class Conversation(models.Model):
         ordering = ('-modified_at',)
 
 
-class Conversationmessage(models.Model):
+class ConversationMessage(models.Model):
     conversation = models.ForeignKey(Conversation, related_name='messages', on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
