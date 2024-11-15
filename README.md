@@ -1,6 +1,6 @@
-# A Simple Product Presenting Website
+# A Simple Product Presenting Website Using **DJANGO**
 
-## Built Features:
+## Features:
 
 - sign in and login
 - ading items (items have name, description, image, category)
